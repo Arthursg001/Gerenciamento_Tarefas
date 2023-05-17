@@ -7,54 +7,64 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="375dp"
-        android:layout_height="69dp"
+        android:id="@+id/txt_Descricao"
+        android:layout_width="378dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="18dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:text="Descrição da Tarefa"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="141dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_Titulo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_edit"
         android:layout_width="19dp"
         android:layout_height="19dp"
         app:srcCompat="@drawable/_324826"
         tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="581dp" />
+        tools:layout_editor_absoluteY="581dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/txt_Titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:text="Nome da Tarefa"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="78dp" />
 
     <CalendarView
-        android:id="@+id/calendarView"
+        android:id="@+id/date_Calendario"
         android:layout_width="350dp"
         android:layout_height="303dp"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="228dp" />
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="244dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txt_Tarefa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
         android:text="Organizar arquivos no GitHub"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="86dp"
+        app:layout_constraintStart_toEndOf="@+id/img_edit"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="581dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/img_delet"
         android:layout_width="19dp"
         android:layout_height="19dp"
         app:srcCompat="@drawable/_334328"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="59dp"
         tools:layout_editor_absoluteY="581dp" />
 
@@ -63,7 +73,17 @@
         android:layout_height="66dp"
         android:background="#6B0048FF"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="37dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/_582717"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="20dp"
+            android:contentDescription="TODO" />
 
         <TextView
             android:layout_width="244dp"
@@ -74,14 +94,6 @@
             app:layout_constraintStaret_toStartOf="parent"
             tools:layout_editor_absoluteX="83dp"
             tools:layout_editor_absoluteY="18dp" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="37dp"
-            android:layout_height="30dp"
-            app:srcCompat="@drawable/_582717"
-            tools:layout_editor_absoluteX="26dp"
-            tools:layout_editor_absoluteY="20dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -92,7 +104,8 @@
         app:backgroundTint="#91AFFC"
         app:srcCompat="@drawable/_0310"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="641dp" />
+        tools:layout_editor_absoluteY="641dp"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton3"
@@ -102,6 +115,7 @@
         app:backgroundTint="#93B1FE"
         app:srcCompat="@drawable/_334328"
         tools:layout_editor_absoluteX="310dp"
-        tools:layout_editor_absoluteY="641dp" />
+        tools:layout_editor_absoluteY="641dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
