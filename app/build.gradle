@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'developer.android.santos.gerenciamentotarefas'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "developer.android.santos.gerenciamentotarefas"

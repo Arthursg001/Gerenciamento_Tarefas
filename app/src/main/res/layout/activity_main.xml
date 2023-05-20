@@ -35,10 +35,11 @@
         android:ems="10"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:text="Nome da Tarefa"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="78dp" />
+        tools:layout_editor_absoluteY="77dp" />
 
     <CalendarView
         android:id="@+id/date_Calendario"
@@ -103,9 +104,9 @@
         android:clickable="true"
         app:backgroundTint="#91AFFC"
         app:srcCompat="@drawable/_0310"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="641dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="641dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton3"
@@ -114,8 +115,8 @@
         android:clickable="true"
         app:backgroundTint="#93B1FE"
         app:srcCompat="@drawable/_334328"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="310dp"
-        tools:layout_editor_absoluteY="641dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="641dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
